@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Random Color Flipper</title>
+        
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+
+        </style>
+</head>
+<body>
+</body><br>
+<br><br>
+    <h1 style="text-align:center; font-family: monospace;" class="display-3"><b><u>Random Color Flipper</u></b></h1>
+    
+    <h4 style="background-color:#000000; color: white; text-align:center; padding:50px; font-size:38px; font-family: monospace; margin-top:4%;"><b>Background Color:</b><br> <span class="color"><p id="demo">#HexCode</p></span></h4>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+
+    </div>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+<button type="button" id="btn" class="btn btn-dark">Click me to generate random colors</button>
+    </div>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+
+    </div>
+</div>
+
+<script>
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+
+const btn = document.getElementById("btn");
+const color = document.querySelector("color");
+btn.addEventListener("click", function(){
+let hexColor = "#";
+for (let i=0; i<6; i++){
+    hexColor += hex[randomGen()];
+} 
+
+document.body.style.backgroundColor = hexColor;
+var showText = hexColor;
+document.getElementById("demo").innerHTML = showText;
+});
+
+function randomGen(){
+    return Math.floor(Math.random() * hex.length);
+}
+
+
+
+</script>
+</html>
+</html>
