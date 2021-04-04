@@ -1,0 +1,130 @@
+body{
+text-align: center;
+background: linear-gradient(to bottom, black 1%, #00274c 65%);
+background-repeat:repeat;
+background-size: cover;
+width: 100%;
+height: 140%;
+}  
+
+.intro {
+text-align: center;
+margin-top: 40px;
+font-weight: bold;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: monospace;
+	color: white;
+	font-weight: 800;
+    
+}
+
+p {
+    font-family: monospace;
+	font-weight: 400;
+    font-size: 20px;
+}
+
+#first {
+    font-size: 20px;
+	margin-top: 10px;
+	color: lawngreen;
+}
+
+#second {
+    font-size: 20px;
+	color: red;
+
+}
+
+#third {
+    font-size: 20px;
+	color: aliceblue;
+	margin-bottom: 30px;
+}
+
+input {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 6px;
+	border: 1px solid #111;
+}
+
+#enter {
+	border: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #04A1BF;
+	background-color: #025F70;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+}
+
+#enter:hover{
+	background-color: #02798F;
+	color: #FFCD5D;
+}
+
+ul {
+	text-align: left;
+	margin-top: 20px;
+}
+
+
+li {
+    font-size: 19px;
+    font-family: monospace;
+	list-style: decimal;
+    list-style-position: inside;
+	padding: 4px 20px;
+	color: black;
+	text-transform: capitalize;
+	font-weight: 400;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+li:hover {
+	background-color: palegreen;
+}
+
+li > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+.done {
+	background: #ff1a1a !important;
+	color: black;
+    text-decoration: line-through;
+}
+
+.delete {
+	display: none;
+
+}
+
+#dateAndTime{
+padding-right:114px; color:whitesmoke;
+font-family: monospace;
+text-align:right; 
+}
+
+
