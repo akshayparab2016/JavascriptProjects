@@ -1,0 +1,320 @@
+<html>
+<head>    
+    <title>Shopping Cart App</title>    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css"/>
+<!-- Material Icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="myStylesheeet.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="javascript:;">Brand logo</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+<ul class="navbar-nav ml-auto">
+<!--
+<li class="nav-item">
+<a class="nav-link" href="home.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link cart-item-count" href="cart.html" data-cesta-feira-items-count><span class="fa fa-shopping-cart"></span> Shopping Cart</a>
+</li>   -->
+<li class="nav-item">
+<a class="nav-link">
+<div id="cart-container">
+<div id="cart">
+<button class="btn btn-info openCloseCart">
+Shopping Cart&nbsp;<i class="fa fa-shopping-cart fa-1x" aria-hidden="true"></i></button>&nbsp;&nbsp;
+
+<button id="emptyCart" class="btn btn-danger">Clear Cart
+<i class="fa fa-trash fa-1x"></i>
+</button>
+</div>
+<span id="itemCount"></span>
+</div>
+</a>
+</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--
+<div id="cart-container">
+<div id="cart">
+<i class="fa fa-shopping-cart fa-2x openCloseCart" aria-hidden="true"></i>&nbsp;
+<button id="emptyCart">Empty Cart</button>
+</div>
+<span id="itemCount"></span>
+</div>
+-->
+
+<!-- Page Content -->
+<div class="jumbotron jumbotron-fluid" style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); padding:150px;">
+    <h1 class="display-4" style="text-align:center; margin-top:60px;">My Shopping Cart</h1>
+</div>
+
+<div id="shoppingCart">
+<div id="cartItemsContainer">
+<h4>Items in your cart</h4><br>
+<i class="fa fa-times-circle-o fa-3x openCloseCart" aria-hidden="true" style="cursor:pointer; color:firebrick;"></i>
+<div id="cartItems"></div>
+<span id="cartTotal"></span><hr>
+<p>
+<div class="checkout"><a href="cart.html">
+<button class="btn btn-success">Proceed to checkout</button></a></div></div>
+</div>
+
+
+
+
+<h2 style="text-align:center;">Our Products</h2>
+<br>
+<!-- Products Page -->
+<div class="container">
+<div class="row text-center">
+<!-- Product 1 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<div class="item">
+<div class="itemDetails">
+<div class="itemImage">
+<img src="images%20(3).jpg" alt="" /></div>
+<div class="card-body">
+<h4 class="card-title">Product 1</h4>
+<div class="itemText">
+<p class="price-container">Price: ₹
+    <span class="price">10</span></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at optio nam asperiores ipsam voluptate eaque labore.</p>
+    </div></div>
+</div>
+<button class="add btn btn-info">Add to cart</button>
+<br><br>
+</div></div>
+</div>
+
+
+<!-- Product 2 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<div class="item">
+<div class="itemDetails">
+<div class="itemImage">
+<img src="images%20(3).jpg" alt="" /></div>
+<div class="card-body">
+<h4 class="card-title">Product 2</h4>
+<div class="itemText">
+<p class="price-container">Price: ₹
+    <span class="price">10</span></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at optio nam asperiores ipsam voluptate eaque labore.</p>
+    </div></div>
+</div>
+<button class="add btn btn-info">Add to cart</button>
+<br><br>
+</div></div>
+</div>
+
+
+<!-- Product 3 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<div class="item">
+<div class="itemDetails">
+<div class="itemImage">
+<img src="images%20(3).jpg" alt="" /></div>
+<div class="card-body">
+<h4 class="card-title">Product 3</h4>
+<div class="itemText">
+<p class="price-container">Price: ₹
+    <span class="price">10</span></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at optio nam asperiores ipsam voluptate eaque labore.</p>
+    </div></div>
+</div>
+<button class="add btn btn-info">Add to cart</button>
+<br><br>
+</div></div>
+</div>
+
+
+<!-- Product 4 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<div class="item">
+<div class="itemDetails">
+<div class="itemImage">
+<img src="images%20(3).jpg" alt="" /></div>
+<div class="card-body">
+<h4 class="card-title">Product 4</h4>
+<div class="itemText">
+<p class="price-container">Price: ₹
+    <span class="price">10</span></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at optio nam asperiores ipsam voluptate eaque labore.</p>
+    </div></div>
+</div>
+<button class="add btn btn-info">Add to cart</button>
+<br><br>
+</div></div>
+</div>
+
+
+<!-- Product 5 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<div class="item">
+<div class="itemDetails">
+<div class="itemImage">
+<img src="images%20(3).jpg" alt="" /></div>
+<div class="card-body">
+<h4 class="card-title">Product 5</h4>
+<div class="itemText">
+<p class="price-container">Price: ₹
+    <span class="price">10</span></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at optio nam asperiores ipsam voluptate eaque labore.</p>
+    </div></div>
+</div>
+<button class="add btn btn-info">Add to cart</button>
+<br><br>
+</div></div>
+</div>
+
+
+<!-- Product 6 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<div class="item">
+<div class="itemDetails">
+<div class="itemImage">
+<img src="images%20(3).jpg" alt="" /></div>
+<div class="card-body">
+<h4 class="card-title">Product 6</h4>
+<div class="itemText">
+<p class="price-container">Price: ₹
+    <span class="price">10</span></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at optio nam asperiores ipsam voluptate eaque labore.</p>
+    </div></div>
+</div>
+<button class="add btn btn-info">Add to cart</button>
+<br><br>
+</div></div>
+</div>
+
+
+<!-- Product 7 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<div class="item">
+<div class="itemDetails">
+<div class="itemImage">
+<img src="images%20(3).jpg" alt="" /></div>
+<div class="card-body">
+<h4 class="card-title">Product 7</h4>
+<div class="itemText">
+<p class="price-container">Price: ₹
+    <span class="price">10</span></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at optio nam asperiores ipsam voluptate eaque labore.</p>
+    </div></div>
+</div>
+<button class="add btn btn-info">Add to cart</button>
+<br><br>
+</div></div>
+</div>
+
+
+<!-- Product 8 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<div class="item">
+<div class="itemDetails">
+<div class="itemImage">
+<img src="images%20(3).jpg" alt="" /></div>
+<div class="card-body">
+<h4 class="card-title">Product 8</h4>
+<div class="itemText">
+<p class="price-container">Price: ₹
+    <span class="price">10</span></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at optio nam asperiores ipsam voluptate eaque labore.</p>
+    </div></div>
+</div>
+<button class="add btn btn-info">Add to cart</button>
+<br><br>
+</div></div>
+</div>
+
+
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+<div class="container">
+<div class="row">    
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+<ul style="color:white; list-style-type:none">        
+    <li><b>Buy</b></li>
+    <li>Registration</li>
+    <li>Stores</li>
+    <li>Local info</li>
+    </ul>
+        </div>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+<ul style="color:white; list-style-type:none">
+ <li><b>Sell</b></li>
+    <li>Start selling</li>
+    <li>Learn to sell</li>
+    <li>Affiliates</li>
+    </ul>
+        </div>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+<ul style="color:white; list-style-type:none">
+<li><b>Tools</b></li>
+    <li>Developer</li>
+    <li>Security center</li>
+    <li>Site map</li>
+    </ul>
+        </div>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+<ul style="color:white; list-style-type:none">
+         <li><b>Help Center</b></li>
+    <li>Resolution center</li>
+    <li>Seller information</li>
+    <li>Contact</li>
+    </ul>
+        </div>
+
+    </div>
+</div>
+
+<hr style="background-color:grey;">
+
+<p class="icons" style="margin-left:44%; list-style-type:none;">
+<a href="#"><i class="fa fa-facebook" style="font-size:30px; padding: 16px;"></i></a>
+<a href="#"><i class="fa fa-instagram" style="font-size:30px; padding: 16px;"></i></a>
+<a href="#"><i class="fa fa-twitter" style="font-size:30px; padding: 16px;"></i></a>    
+
+<br>
+<div class="container">
+<p class="m-0 text-center text-white">Akshay Parab &copy; <span id="date"></span></p>
+</div><br>
+<a href="#" class="fa fa-chevron-circle-up
+text-center" style="margin-left:49%; font-size:44px; color:#00688B;"></a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
