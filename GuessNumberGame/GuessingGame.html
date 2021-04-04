@@ -1,1 +1,40 @@
+<html>
+<head><title>Guess a number</title>   
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- Material Icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+</head>
+
+<body class="background img-fluid"><br><br>
+<div class="container">
+<h1>Guess the number !!!</h1><br>
+<h3>Guess a whole number between 1 to 100</h3><p>
+    <h6><p id="demo1"></p></h6>
+<br>
+    <form id="myForm">
+<div class="form"> 
+    <label><b>Enter a guess: </b></label>
+<input type = "number" id="guessField"><br><br>
+    <button type="button" class="btn btn-primary btn-lg" id="submitguess" onclick="inputValidate();">Submit guess <i class="fa fa-paper-plane"></i></button>&nbsp;&nbsp;&nbsp;
+
+    <button type="button" class="btn btn-success btn-lg" id="playAgain" onclick="resetAll();">Start over <i class="fa fa-refresh"></i></button>    
+    <br><br>
+<p id="demo" class="display-4"></p>
+        </div> 
+    </form>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

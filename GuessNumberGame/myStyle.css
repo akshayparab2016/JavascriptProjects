@@ -1,0 +1,100 @@
+.form{
+        font-size: 24px;
+		font-family:monospace;
+    }    
+
+body{
+font-family:monospace;
+}	
+
+label{
+	font-family:monospace;
+	font-size: 26px;
+	color: white;
+	}
+
+	h1{
+	font-family:monospace;
+	font-size: 40px;
+	color: white;
+	}
+
+	h3{
+	font-family:monospace;
+	font-size: 28px;
+	color: white;
+	}
+	
+	
+	h2#success{
+	font-family:monospace;
+	font-size: 30px;
+	border-radius: 4px;
+	margin-left:12%;
+	width: 80%;
+	padding: 3px;
+	background-color:green;
+	color: white;
+	}
+	
+	
+	h2#smaller{
+	font-family:monospace;
+	font-size: 30px;
+	border-radius: 4px;
+	margin-left:12%;
+	width: 80%;
+	padding: 3px;
+	background-color:firebrick;
+	color: white;
+	}
+
+	h2#greater{
+	font-family:monospace;
+	font-size: 30px;
+	border-radius: 4px;
+	margin-left:12%;
+	width: 80%;
+	padding: 3px;
+	background-color:yellow;
+	color: black;
+	}
+
+.background{
+ background-color: black; 
+ background-image: url(leaf.jpg);
+ background-size: cover;
+ text-align:center;
+margin-top: 34px;
+  width: 100%;
+  height: auto;
+ }
+
+#demo {
+
+    animation: 2s blinker linear infinite;
+    -webkit-animation: 2s blinker linear infinite;
+    -moz-animation: 2s blinker linear infinite;
+     color: black;
+    }
+
+    @-moz-keyframes blinker {  
+     0% { opacity: 0.0; }
+     50% { opacity: 0.5; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {  
+     0% { opacity: 0.0; }
+     50% { opacity: 0.5; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {  
+     0% { opacity: 0.0; }
+     50% { opacity: 0.5; }
+     100% { opacity: 1.0; }
+     }
+
+
+
